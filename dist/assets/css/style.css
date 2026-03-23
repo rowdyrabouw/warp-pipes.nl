@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "SuperMario";
+  src: url("../fonts/SuperMario.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RobotoRegular";
+  src: url("../fonts/RobotoRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-size: 1.25rem;
+  font-family: "RobotoRegular", sans-serif;
+  background-color: rgb(255, 255, 255);
+}
+
+main {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 1rem;
+  gap: 1rem;
+  min-height: 90vh;
+  justify-items: center;
+}
+
+li {
+  &::marker {
+    font-size: 0;
+  }
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+
+  a {
+    font-family: "SuperMario", sans-serif;
+    font-size: 3rem;
+    color: #000;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+}
+
+img {
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5));
+}
+
+h1 {
+  font-family: "SuperMario", sans-serif;
+  font-size: 6rem;
+  color: #000;
+  text-decoration: none;
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3));
+  margin: 0;
+}
+
+.mario {
+  color: oklch(59% 59% 28deg);
+}
+
+.luigi {
+  color: oklch(65% 53% 143deg);
+}
+
+.peach {
+  color: oklch(71% 48% 3deg);
+}
+
+.goomba {
+  color: oklch(51% 26% 44deg);
+}
+
+.mushroom {
+  color: oklch(54% 55% 26deg);
+}
+
+.bowser {
+  color: oklch(79% 39% 77deg);
+}
+
+.spiny {
+  color: oklch(60% 52% 30deg);
+}
+
+.yoshi {
+  color: oklch(79% 54% 141deg);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6rem;
+  margin-block-start: 3rem;
+}

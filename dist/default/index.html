@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Warp Pipes</title>
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <ul>
+        <li>
+          <img src="/assets/img/mario.webp" alt="Mario" height="150" />
+          <a class="mario" href="mario.html">Mario</a>
+        </li>
+        <li>
+          <img src="/assets/img/luigi.webp" alt="Luigi" height="150" />
+          <a class="luigi" href="luigi.html">Luigi</a>
+        </li>
+        <li>
+          <img src="/assets/img/peach.webp" alt="Peach" height="150" />
+          <a class="peach" href="peach.html">Prinses<br />Peach</a>
+        </li>
+        <li>
+          <img src="/assets/img/bowser.webp" alt="Bowser" height="150" />
+          <a class="bowser" href="bowser.html">Bowser</a>
+        </li>
+        <li>
+          <img src="/assets/img/goomba.webp" alt="Goomba" height="100" />
+          <a class="goomba" href="goomba.html">Goomba</a>
+        </li>
+        <li>
+          <img src="/assets/img/spiny.webp" alt="Spiny" height="100" />
+          <a class="spiny" href="spiny.html">Spiny</a>
+        </li>
+        <li>
+          <img src="/assets/img/mushroom.webp" alt="Mushroom" height="75" />
+          <a class="mushroom" href="mushroom.html">Mushroom</a>
+        </li>
+        <li>
+          <img src="/assets/img/yoshi.webp" alt="Yoshi" height="150" />
+          <a class="yoshi" href="yoshi.html">Yoshi</a>
+        </li>
+      </ul>
+    </main>
+    <script>
+      const observer = new PerformanceObserver((list) => {
+        const entries = list.getEntries();
+        const lastEntry = entries[entries.length - 1]; // Use the latest LCP candidate
+        console.log("LCP:", lastEntry.startTime);
+        //   console.log(lastEntry);
+      });
+      observer.observe({ type: "largest-contentful-paint", buffered: true });
+    </script>
+  </body>
+</html>
