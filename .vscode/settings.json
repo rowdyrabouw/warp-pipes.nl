@@ -1,0 +1,87 @@
+{
+  "workbench.colorTheme": "Monokai Pro",
+  "workbench.colorCustomizations": {
+      "editor.background": "#000000",
+  },
+  "editor.tokenColorCustomizations": {
+    "[Monokai Pro]": {
+        "strings": "#FABD05",
+        "textMateRules": [
+            {
+                "scope": "entity.other.attribute-name",
+                "settings": {
+                    "foreground": "#34A852"
+                }
+            },
+            {
+                "scope": "meta.attribute.class.html string",
+                "settings": {
+                    "foreground": "#FABD05"
+                }
+            },
+            {
+                "scope": "entity.name.tag",
+                "settings": {
+                    "foreground": "#EA4336"
+                }
+            },
+            {
+                "scope": [
+                    "storage.type",
+                    "storage.modifier",
+                    "keyword"
+                ],
+                "settings": {
+                    "foreground": "#FFFFFF"
+                }
+            },
+            {
+                "scope": [
+                    "variable",
+                    "variable.other",
+                    "variable.other.readwrite",
+                    "variable.other.constant",
+                    "variable.parameter"
+                ],
+                "settings": {
+                    "foreground": "#4285F4"
+                }
+            },
+            {
+                "scope": [
+                    "entity.name.function",
+                    "support.function",
+                    "entity.name.class",
+                    "entity.name.type",
+                    "support.class",
+                    "support.type"
+                ],
+                "settings": {
+                    "foreground": "#34A852"
+                }
+            },
+            {
+                "scope": [
+                    "keyword.operator",
+                    "keyword.control.new",
+                    "keyword.operator.new",
+                    "punctuation.parenthesis",
+                    "meta.brace.round",
+                    "punctuation.definition.parameters"
+                ],
+                "settings": {
+                    "foreground": "#EA4336"
+                }
+            }
+        ]
+    }
+},
+  "files.autoSave": "onFocusChange",
+  "prettier.printWidth": 150,
+  "editor.formatOnSave": true,
+  "editor.fontSize": 14,
+  "editor.fontFamily": "'Mono Lisa', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.renderWhitespace": "trailing"
+}
+
